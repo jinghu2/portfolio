@@ -1,3 +1,4 @@
+/***************************** Scroll button ***************************/
 $(function() {
   $('a[href*=#]').on('click', function(e) {
     e.preventDefault();
@@ -5,12 +6,7 @@ $(function() {
   });
 });
 
-/*
-$(window).scroll(function(){
-    $(".home-project").css("opacity", 1 - $(window).scrollTop() / 250);
-  });
-*/
-
+/***************************** Fade-in ********************************/
 /* FadeIn Scroll */
 $(document).ready(function() {
     
@@ -35,11 +31,9 @@ $(document).ready(function() {
     
 });
 
-$(document).ready(function() {
-    
-    /* Every time the window is scrolled ... */
 
-    
+$(document).ready(function() {
+    /* Every time the window is scrolled ... */
         /* Check the location of each desired element */
         $('.home-project').each( function(i){
             
@@ -51,9 +45,14 @@ $(document).ready(function() {
                 
                 $(this).animate({'opacity':'1'},1500);
             }
-            
         }); 
-    
+});
 
-    
+$('.js-anchor-link').click(function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href'));
+  if(target.length){
+    var scrollTo = target.offset().top;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+  }
 });

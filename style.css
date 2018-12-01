@@ -1,7 +1,8 @@
 /***************************** Global styles ***************************/
 body {
-    margin: 3% 10%;
+    margin: 3% 10% 0% 10%;
     font-family: 'Lato', sans-serif;
+    color: black;
 }
 
 /***************************** Nav bar ***************************/
@@ -9,6 +10,10 @@ body {
     background-color: transparent;
     border-color: transparent;
     font-size: 18px;
+}
+
+.navbar-default .navbar-nav li a {
+    color: black;
 }
 
 .navbar-brand {
@@ -20,10 +25,17 @@ body {
     font-weight: lighter;
 }
 
-.navbar-nav li a:hover {
+.navbar-nav li a.active {
+    font-weight: bold;
+}
+.navbar-nav li a:hover:not(.active) {
     color:  !important;
     font-weight: bold;
 }
+
+
+
+
 
 /***************************** Home intro ***************************/
 .home-intro {
@@ -51,8 +63,8 @@ body {
 
 /* Animation */
 .anim-typewriter {
-    animation: typewriter 3s steps(30) 0.5s 1 normal both,
-        blinkTextCursor 500ms steps(44) infinite normal;
+    animation: typewriter 4s steps(30) 0.5s 1 normal both,
+        blinkTextCursor 800ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
@@ -88,6 +100,39 @@ body {
     opacity: 0;
 }
 
+.home-proj-title-mind a {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #beefed 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #222;
+    font-size: 1.25em;
+    line-height: 1.15em;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
+}
+
+.home-proj-title-mind a:hover {
+    background-position: -99.99% 0;
+    color: gray;
+}
+
+.home-proj-title-hungry a {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, orange 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #222;
+    font-size: 1.25em;
+    line-height: 1.15em;
+    text-decoration: none;
+    transition: background-position 0.5s ease-out;
+}
+
+.home-proj-title-hungry a:hover {
+    background-position: -99.99% 0;
+    color: gray;
+}
+
+
 
 
 .home-pic {
@@ -99,8 +144,8 @@ body {
 section {
     width: 100%;
     height: 100%;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 section::after {
@@ -118,21 +163,6 @@ section h1 {
     display: table-cell;
 }
 
-.home-proj-title a {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, black 50%);
-    background-position: -0% 0;
-    background-size: 200% auto;
-    color: #222;
-    font-size: 1.25em;
-    line-height: 1.15em;
-    text-decoration: none;
-    transition: background-position 0.5s ease-out;
-}
-
-.home-proj-title a:hover {
-    background-position: -99.99% 0;
-    color: white;
-}
 
 section h2 {
     font-weight: lighter;
@@ -147,7 +177,7 @@ section h3 {
     font-size: 16px;
 }
 
-
+/*************************** Scoll button *******************************/
 .demo {
     text-align: center;
 }
@@ -171,9 +201,6 @@ section h3 {
 .demo a:hover {
     opacity: .5;
 }
-
-
-
 
 
 .scroll-arrow a {
@@ -228,14 +255,16 @@ section h3 {
     }
 }
 
+/*************************** Footer ***************************/
 footer {
-    margin-top: 70px;
+    margin-top: 120px;
+    margin-bottom: 20px;
 }
 footer h1{
     font-weight: lighter;
     padding-bottom: 10px;
+    font-size: 30px;
 }
-
 
 footer p{
     margin-bottom: 70px;
@@ -244,7 +273,94 @@ footer p{
 }
 
 footer h4{
-    padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
+    color: gray;
 }
+
+footer .about-me {
+    padding: 0;
+}
+
+/*************************** About me ***************************/
+.about-me h1 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+.about-me p {
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.about-me .btn {
+    font-size: 16px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.home-proj-title-black a {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, black 50%);
+    background-position: -0% 0;
+    background-size: 200% auto;
+    color: #222;
+    font-size: 1.25em;
+    line-height: 1.15em;
+    text-decoration: none;
+    transition: background-position 0.3s ease-out;
+}
+
+.home-proj-title-black a:hover {
+    background-position: -99.99% 0;
+    color: white;
+}
+
+/*************************** Anchor ***************************/
+#anchor {
+/*  left:20px;*/
+  position: fixed;
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+}
+
+#anchor a {
+  display: block;
+  padding: 10px 10px;
+}
+
+#anchor a:hover {
+  color: #ff0;
+}
+
+.side-projects .section {
+  height: 1000px;
+  padding: 30px 140px;
+}
+
+.side-projects h1 {
+  margin: 0 0 20px 0;
+}
+
+.side-projects .section a {
+  color: #3399FF;
+}
+
+
+
+
+
+
+
