@@ -1,3 +1,4 @@
+/********** Reference for W3school and codepen tutorials********/
 /***************************** Scroll button ***************************/
 $(function() {
   $('a[href*=#]').on('click', function(e) {
@@ -68,7 +69,6 @@ scrollNav();
 
 
 /************** Detail page lides show ***************/
-/********** Reference for W3school ********/
 var slideIndex = 1;
 showSlides(slideIndex);
 

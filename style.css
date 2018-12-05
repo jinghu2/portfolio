@@ -84,6 +84,7 @@ body {
     transform: translateY(-50%);
 }
 
+/** Partly referenced Codepen tutorial ***/
 /* Animation */
 .anim-typewriter {
     animation: typewriter 4s steps(30) 0.5s 1 normal both,
@@ -201,6 +202,7 @@ section h3 {
 }
 
 /*************************** Scoll button *******************************/
+/** Partly referenced W3schools tutorial ***/
 .demo {
     text-align: center;
 }
@@ -352,6 +354,7 @@ button a:hover {
 }
 
 /*************************** Anchor ***************************/
+/** Partly referenced W3schools tutorial ***/
 #anchor {
     left: 1%;
     position: fixed;
@@ -585,7 +588,7 @@ img {
     clear: both;
 }
 
-/* Six columns side by side */
+/* 3 columns side by side */
 .slidesCol {
     float: left;
     width: 33.3%;
