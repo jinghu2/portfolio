@@ -401,24 +401,27 @@ button a:hover {
 .project-overview h1 {
     margin-bottom: 10px;
     display: table-cell;
+    font-weight: lighter;
 }
 
 .project-overview h2 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 10px;
+    font-weight: lighter;
 }
 
 .project-overview h3 {
     font-size: 16px;
+    font-weight: lighter;
 }
 
 
 .summary {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 80px;
-    line-height: 32px;
+    line-height: 28px;
 /*    font-weight: lighter;*/
 }
 
@@ -439,6 +442,18 @@ button a:hover {
 /*    font-weight: lighter;*/
 }
 
+.project-section .proto-walk p{
+    font-size: 14px;
+    line-height: 25px;
+    font-style: italic;
+/*    font-weight: lighter;*/
+}
+
+.project-section .proto-walk ul{
+    padding: 20px;
+}
+
+
 .project-section .col-sm-5 {
     padding-left: 40px;
     padding-left: 0px;
@@ -454,6 +469,22 @@ padding-right: 0px;
     text-align: center;
 }
 
+.project-section h4 {
+    font-size: 25px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.project-section .proto-walk h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.project-section .proto-walk .row {
+    margin-bottom: 70px;
+}
 /******************** Detail - Slide show *******************/
 /******** Reference for W3school **********/
 /************** Slides show ***************/
@@ -550,9 +581,20 @@ img {
     line-height: 30px;
 }
 
-.project-section .ongoing{
+.project-section ul li{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.ongoing{
     text-align: center;
     margin-top: 70px;
     font-size: 30px;
     font-weight: lighter;
 }
+
+.proto-walk {
+    font-size: 18px;
+    line-height: 20px;
+}
+
