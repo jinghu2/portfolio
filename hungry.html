@@ -11,29 +11,44 @@
 
 </head>
 
-<body>
-
-    <!--------------------- Navbar ------------------------------>
-    <nav class="navbar fixed-top navbar-default">
-        <div class="container-fluid">
+<!----------------------- Navbar --------------------------------->
+<header>
+    <nav class="navbar navbar-inverse bg-faded navbar-fixed-top">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="btn btn-primary navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                    &#9776;&nbsp;MENU
                 </button>
                 <a class="navbar-brand" href="index.html">Jing</a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a class="active" href="index.html">Projects</a></li>
-                    <li><a href="play.html">Play</a></li>
-                    <li><a href="about.html">About Me</a></li>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="nav navbar-nav  navbar-right">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="play.html">Play</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <!-- nav -->
+</header>
+    
+<body>
+        <!-------------------- Anchor --------------------------------->
+    <div class='row'>
+        <div class='col-sm-3'>
+            <ul id="anchor" class='home-proj-title-black'>
+                <li><a href="#section-h1" class="js-anchor-link">Background</a></li>
+                <li><a href="#section-h2" class="js-anchor-link">Problem</a></li>
+                <li><a href="#section-h3" class="js-anchor-link">Competitive Analysis</a></li>
+                <li><a href="#section-h4" class="js-anchor-link">Personas</a></li>
+                <li><a href="#section-h5" class="js-anchor-link">Design Ideas</a></li>
+                <li><a href="#section-h6" class="js-anchor-link">Paper Prototype</a></li>
+            </ul>
+        </div>
+        <div class='col-sm-9'></div>
+    </div>
+    
     <!--------------------- project-overview -------------------------->
     <div class='project-overview'>
         <div class='hungry'>
@@ -48,7 +63,7 @@
         </div>
     </div>
 
-    <!--------------------- Background -------------------------->
+    <!--------------------- Summary -------------------------->
     <div class='row'>
         <div class='col-sm-4'></div>
         <div class='col-sm-4 summary'>
@@ -60,7 +75,8 @@
         </div>
     </div>
 
-    <div class='project-section'>
+    <!--------------------- Background -------------------------->
+    <div class='project-section'  id='section-h1'>
         <header>
             <h1>Background</h1>
         </header>
@@ -78,7 +94,7 @@
     </div>
 
     <!-------------------------- Problem ---------------------------->
-    <div class='project-section text-center'>
+    <div class='project-section text-center' id='section-h2'>
         <header>
             <h1>Problem</h1>
         </header>
@@ -86,7 +102,7 @@
     </div>
 
     <!-------------------- Competitive analysis ----------------------->
-    <div class='project-section text-center'>
+    <div class='project-section text-center' id='section-h3'>
         <header>
             <h1>Competitive analysis</h1>
             <h2>Analyze and build upon the menu services of different colleges.</h2>
@@ -98,7 +114,7 @@
     </div>
 
     <!-------------------- Personas ----------------------->
-    <div class='project-section'>
+    <div class='project-section' id='section-h4'>
         <header>
             <h1>Personas</h1>
             <h2>Interviewed students at the UM and synthesized to 3 personas.</h2>
@@ -162,7 +178,7 @@
 
 
     <!-------------------- Design Ideas ----------------------->
-    <div class='project-section'>
+    <div class='project-section' id='section-h5'>
         <header>
             <h1>Design Ideas</h1>
             <h2>Wild ideas on how to help students eat happily and healthily.</h2>
@@ -192,14 +208,14 @@
 
 
     <!-------------------- Paper Prototype ----------------------->
-    <div class='project-section'>
+    <div class='project-section' id='section-h6'>
         <header>
             <h1>Paper Prototype Testing</h1>
             <h2>I use paper prototype to test the key tasks and interactions within Hungry Wolverines</h2>
         </header>
         <div style='text-align: center'><iframe width=50% height="315" src="https://www.youtube.com/embed/-VIvv8RkFn4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
     </div>
-    
+
     <p class='ongoing'>More Ongoing...</p>
 
     <!-------------------- Footer ----------------------->
